@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Work_Sans, Plus_Jakarta_Sans } from "next/font/google";
+import NavBar from "@/components/shared/NavBar";
 export const metadata: Metadata = {
   title: "MetaBlog | Technologies blog web application",
   description: "Technologies blog web application",
@@ -24,7 +25,11 @@ export default function RootLayout({
     <html lang='en'>
       <body
         className={`${work_Sans.variable} ${plus_Jakarta_Sans.variable} antialiased`}>
-        <main>{children}</main>
+        <main className='lg:container lg:mx-auto md:px-60 sm:px-10 xsm:px-4'>
+          <NavBar />
+          {children}
+        </main>
+        {/* footer */}
       </body>
     </html>
   );
