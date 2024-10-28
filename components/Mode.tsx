@@ -1,14 +1,11 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { CiLight, CiDark } from "react-icons/ci";
+import { useTheme } from "@/context/ThemeProvider";
 
-const Mode = () => {
-  const [isLightMode, setIsLightMode] = useState(false);
-  const modeHandler = (e: React.MouseEvent | React.KeyboardEvent) => {
-    e.preventDefault();
-    setIsLightMode((prevMode) => !prevMode);
-  };
+const Mode: React.FC = () => {
+  const { isLightMode, toggleTheme } = useTheme();
 
   return (
     <div
@@ -17,10 +14,10 @@ const Mode = () => {
       aria-label='Toggle light and dark mode'
       tabIndex={0}
       className='bg-secondary-200 rounded-full w-12 h-7 flex items-center relative cursor-pointer'
-      onClick={modeHandler}
+      onClick={toggleTheme}
       onKeyDown={(e: React.KeyboardEvent) => {
         if (e.key === "D" || e.key === "L" || e.key === "d" || e.key === "l") {
-          modeHandler(e);
+          toggleTheme();
         }
       }}>
       <div
