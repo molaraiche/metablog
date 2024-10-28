@@ -9,18 +9,21 @@ const Search = () => {
     setSearchToggle(!searchToggle);
   };
   return (
-    <form
-      onClick={searchToggleHandler}
-      className=' flex items-center justify-center border-2 rounded-[5px] bg-secondary-100 p-2'>
+    <form className=' dark:bg-[#242535] dark:border-[#242535] flex items-center justify-center border-2 rounded-[5px] bg-secondary-100 p-2'>
       <input
         type='search'
         placeholder='Search in Blogs.'
-        className={`bg-secondary-100 outline-none ease-in h-9   duration-300 ${
+        onKeyDown={(e: React.KeyboardEvent) => {
+          if (e.key === "Escape") {
+            setSearchToggle(!searchToggle);
+          }
+        }}
+        className={`bg-secondary-100 dark:bg-[#242535] dark:text-white  outline-none ease-in duration-300 ${
           searchToggle ? "w-[166px]" : "w-0"
         }`}
       />
-      <button className='text-center'>
-        <MdSearch className='outline-none w-4 h-4' />
+      <button className='text-center' onClick={searchToggleHandler}>
+        <MdSearch className='outline-none dark:text-secondary-600' />
       </button>
     </form>
   );

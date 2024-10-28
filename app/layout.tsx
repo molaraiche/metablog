@@ -1,9 +1,8 @@
-// app/layout.tsx
 import type { Metadata } from "next";
 import { Work_Sans, Plus_Jakarta_Sans } from "next/font/google";
 import NavBar from "@/components/shared/NavBar";
 import { ThemeProvider } from "@/context/ThemeProvider";
-import "./globals.css"; // Only if you have global Tailwind styles defined
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "MetaBlog | Technologies blog web application",
@@ -32,7 +31,7 @@ export default function RootLayout({
       <body
         className={`${work_Sans.variable} ${plus_Jakarta_Sans.variable} antialiased bg-lightBackground text-lightText dark:bg-darkBackground dark:text-darkText`}>
         <ThemeProvider>
-          <main className='lg:container lg:mx-auto md:px-60 sm:px-10 xsm:px-4'>
+          <main className='lg:container lg:mx-auto md:px-14 sm:px-10 xsm:px-4 font-work'>
             <NavBar />
             {children}
           </main>

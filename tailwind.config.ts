@@ -14,7 +14,7 @@ const config: Config = {
         "secondary-200": "#E8E8EA",
         "secondary-400": "#A1A1AA",
         "secondary-600": "#52525B",
-        "secondary-700": "#52525B",
+
         "secondary-800": "#52535F",
         "secondary-900": "#141624",
         lightBackground: "#ffffff",

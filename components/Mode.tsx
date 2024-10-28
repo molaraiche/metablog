@@ -13,7 +13,7 @@ const Mode: React.FC = () => {
       aria-checked={isLightMode}
       aria-label='Toggle light and dark mode'
       tabIndex={0}
-      className='bg-secondary-200 rounded-full w-12 h-7 flex items-center relative cursor-pointer'
+      className='bg-secondary-200 dark:bg-[#4B6BFB] rounded-full w-12 h-7 flex items-center relative cursor-pointer'
       onClick={toggleTheme}
       onKeyDown={(e: React.KeyboardEvent) => {
         if (e.key === "D" || e.key === "L" || e.key === "d" || e.key === "l") {
