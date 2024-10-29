@@ -9,10 +9,8 @@ import { useCallback, useState } from "react";
 
 const NavBar = () => {
   const [menu, setMenu] = useState(false);
-  console.log(menu);
   const menuHandler = useCallback(() => {
     setMenu((prevMenu) => !prevMenu);
-    console.log(menu);
   }, [menu]);
   const linkHandler: React.MouseEventHandler<HTMLAnchorElement> =
     useCallback(() => {

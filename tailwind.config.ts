@@ -19,6 +19,7 @@ const config: Config = {
         "secondary-900": "#141624",
         lightBackground: "#ffffff",
         darkBackground: "#181A2A",
+        tagBg: "rgba(75, 107, 251, 0.05)",
       },
       fontFamily: {
         work: ["var(--font-work-sans)"],
