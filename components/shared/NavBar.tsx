@@ -25,11 +25,7 @@ const NavBar = () => {
         className={`flex gap-10 items-center justify-center dark:text-white
       text-[#3B3C4A] font-medium lg:bg-opacity-0 md:bg-opacity-0 bg-secondary-400
       lg:static md:static sm:absolute xsm:absolute top-[10vh] lg:flew-row md:flex-row flex-col xsm:flex-col lg:w-fit md:w-fit w-full right-0 lg:py-0 md:py-0 py-5 lg:h-fit md:h-fit h-[40vh] ease-in duration-300 lg:translate-x-0 md:translate-x-0
-      ${
-        menu
-          ? "sm:translate-x-0 xsm:translate-x-[0%]"
-          : "sm:-translate-x-[200%] xsm:lg:translate-x-0 md:-translate-x-[200%]"
-      } 
+      ${menu ? "sm:translate-x-0 xsm:translate-x-[0%]" : "-translate-x-[200%]"} 
       `}>
         <Link href='/' onClick={linkHandler}>
           Home
@@ -44,11 +40,7 @@ const NavBar = () => {
       <div
         className={`flex gap-10 items-center justify-center lg:static md:static sm:absolute xsm:absolute top-[48vh] lg:bg-opacity-0 bg-secondary-400 md:bg-opacity-0 lg:w-fit md:w-fit w-full xsm:w-full right-0 lg:py-0 md:py-0 py-5
           ease-in duration-300 lg:translate-x-0 md:translate-x-0
-      ${
-        menu
-          ? "sm:translate-x-0 xsm:translate-x-[0%]"
-          : "sm:-translate-x-[200%] xsm:lg:translate-x-0 md:-translate-x-[200%]"
-      } 
+      ${menu ? "sm:translate-x-0 xsm:translate-x-[0%]" : "-translate-x-[200%]"} 
         `}>
         <Search linkHandler={linkHandler} />
         <Mode />
