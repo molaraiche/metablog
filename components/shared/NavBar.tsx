@@ -22,9 +22,7 @@ const NavBar = () => {
     <header className='flex items-center justify-between h-[10vh] py-8 '>
       <Logo linkHandler={linkHandler} />
       <nav
-        className={`flex gap-10 items-center justify-center dark:text-white
-      text-[#3B3C4A] font-medium lg:bg-opacity-0 md:bg-opacity-0 bg-secondary-400
-      lg:static md:static sm:absolute xsm:absolute top-[10vh] lg:flew-row md:flex-row flex-col xsm:flex-col lg:w-fit md:w-fit w-full right-0 lg:py-0 md:py-0 py-5 lg:h-fit md:h-fit h-[40vh] ease-in duration-300 lg:translate-x-0 md:translate-x-0
+        className={`nav
       ${menu ? "sm:translate-x-0 xsm:translate-x-[0%]" : "-translate-x-[200%]"} 
       `}>
         <Link href='/' onClick={linkHandler}>
@@ -38,8 +36,7 @@ const NavBar = () => {
         </Link>
       </nav>
       <div
-        className={`flex gap-10 items-center justify-center lg:static md:static sm:absolute xsm:absolute top-[48vh] lg:bg-opacity-0 bg-secondary-400 md:bg-opacity-0 lg:w-fit md:w-fit w-full xsm:w-full right-0 lg:py-0 md:py-0 py-5
-          ease-in duration-300 lg:translate-x-0 md:translate-x-0
+        className={`utils
       ${menu ? "sm:translate-x-0 xsm:translate-x-[0%]" : "-translate-x-[200%]"} 
         `}>
         <Search linkHandler={linkHandler} />
@@ -47,15 +44,19 @@ const NavBar = () => {
       </div>
       <div className='lg:hidden md:hidden sm:flex xsm:flex'>
         {menu ? (
-          <IoMdClose
-            className='dark:text-white text-secondary-900 w-8 h-8'
-            onClick={menuHandler}
-          />
+          <span>
+            <IoMdClose
+              className='dark:text-white text-secondary-900 w-8 h-8'
+              onClick={menuHandler}
+            />
+          </span>
         ) : (
-          <RiMenu2Line
-            className='dark:text-white text-secondary-900 w-8 h-8'
-            onClick={menuHandler}
-          />
+          <span>
+            <RiMenu2Line
+              className='dark:text-white text-secondary-900 w-8 h-8'
+              onClick={menuHandler}
+            />
+          </span>
         )}
       </div>
     </header>

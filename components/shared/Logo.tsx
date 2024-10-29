@@ -8,31 +8,26 @@ const Logo = ({
 }) => {
   const lightLogoPath = "/assets/logo.svg";
   const darkLogoPath = "/assets/logo-dark.svg";
-  
-  return (
-    <div>
-      <Link href='/' onClick={linkHandler}>
-        <div className='block dark:hidden'>
-          <Image
-            src={lightLogoPath}
-            alt='MetaBlog Logo'
-            width={158}
-            height={36}
-            priority={true}
-          />
-        </div>
 
-        <div className='dark:block hidden'>
-          <Image
-            src={darkLogoPath}
-            alt='MetaBlog Dark Logo'
-            width={158}
-            height={36}
-            priority={true}
-          />
-        </div>
-      </Link>
-    </div>
+  return (
+    <Link href='/' onClick={linkHandler}>
+      <Image
+        src={lightLogoPath}
+        alt='MetaBlog Logo'
+        width={158}
+        height={36}
+        priority={true}
+        className='block dark:hidden'
+      />
+      <Image
+        src={darkLogoPath}
+        alt='MetaBlog Dark Logo'
+        width={158}
+        height={36}
+        priority={true}
+        className='dark:block hidden'
+      />
+    </Link>
   );
 };
 
