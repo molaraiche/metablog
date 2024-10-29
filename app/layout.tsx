@@ -3,6 +3,7 @@ import { Work_Sans, Plus_Jakarta_Sans } from "next/font/google";
 import NavBar from "@/components/shared/NavBar";
 import { ThemeProvider } from "@/context/ThemeProvider";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "MetaBlog | Technologies blog web application",
@@ -35,7 +36,7 @@ export default function RootLayout({
             <NavBar />
             {children}
           </main>
-          {/* footer */}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

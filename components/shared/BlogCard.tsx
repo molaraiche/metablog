@@ -8,7 +8,7 @@ const BlogCard = () => {
       </div>
       <div className='flex flex-col gap-5'>
         <div className=''>
-          <p className='text-[#4B6BFB] font-medium bg-tagBg w-fit py-1 px-2.5 '>
+          <p className='text-[#4B6BFB] font-medium bg-tagBg w-fit py-1 px-2.5 rounded-md'>
             Technology
           </p>
           <h3 className='text-2xl font-semibold dark:text-white text-secondary-800'>
