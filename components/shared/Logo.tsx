@@ -1,13 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const Logo = () => {
+const Logo = ({
+  linkHandler,
+}: {
+  linkHandler: React.MouseEventHandler<HTMLAnchorElement>;
+}) => {
   const lightLogoPath = "/assets/logo.svg";
   const darkLogoPath = "/assets/logo-dark.svg";
-
+  
   return (
-    <div className='lg:w-[20%] md:w-[20%] w-fit'>
-      <Link href='/' className=''>
+    <div>
+      <Link href='/' onClick={linkHandler}>
         <div className='block dark:hidden'>
           <Image
             src={lightLogoPath}

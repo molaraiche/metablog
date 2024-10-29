@@ -24,6 +24,9 @@ const config: Config = {
         work: ["var(--font-work-sans)"],
         jakarta: ["var(--font-plus-jakarta-sans)"],
       },
+      screens: {
+        xsm: "285px",
+      },
     },
   },
   plugins: [],

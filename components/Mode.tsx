@@ -21,7 +21,7 @@ const Mode: React.FC = () => {
         }
       }}>
       <div
-        className={`w-5 h-5 flex mx-1 items-center bg-white justify-center rounded-full transform transition-transform duration-300 ${
+        className={`w-5 h-5 flex mx-1 items-center bg-white  justify-center rounded-full transform transition-transform duration-300 ${
           isLightMode ? "translate-x-0" : "translate-x-6"
         }`}>
         {isLightMode ? <CiLight /> : <CiDark />}
