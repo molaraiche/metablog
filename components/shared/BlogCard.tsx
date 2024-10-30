@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { blogPostType } from "@/types/type";
+import Link from "next/link";
 
 const BlogCard: React.FC<blogPostType> = ({
   title,
@@ -8,9 +9,25 @@ const BlogCard: React.FC<blogPostType> = ({
   date,
   thumbnail,
   profile,
+  mainImage,
+  context,
 }) => {
   return (
-    <div className='flex flex-col items-center justify-center gap-4 lg:w-[396px] md:w-[396px] sm:w-[90%] xsm:w-[90%] p-4 rounded-xl border border-secondary-100 shadow-sm'>
+    <Link
+      href={{
+        pathname: `/blogs/${title}`,
+        query: {
+          title: title,
+          tag: tag,
+          author: author,
+          date: date,
+          thumbnail: thumbnail,
+          profile: profile,
+          mainImage: mainImage,
+          context: context,
+        },
+      }}
+      className='flex flex-col items-center justify-center gap-4 lg:w-[396px] md:w-[396px] sm:w-[90%] xsm:w-[90%] p-4 rounded-xl border border-secondary-100 shadow-sm'>
       <div className=''>
         <Image
           src={thumbnail}
@@ -45,7 +62,7 @@ const BlogCard: React.FC<blogPostType> = ({
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
