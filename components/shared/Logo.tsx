@@ -4,7 +4,7 @@ import Link from "next/link";
 const Logo = ({
   linkHandler,
 }: {
-  linkHandler: React.MouseEventHandler<HTMLAnchorElement>;
+  linkHandler?: React.MouseEventHandler<HTMLAnchorElement>;
 }) => {
   const lightLogoPath = "/assets/logo.svg";
   const darkLogoPath = "/assets/logo-dark.svg";
