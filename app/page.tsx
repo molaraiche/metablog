@@ -1,4 +1,5 @@
 import Blogs from "@/components/Blogs";
+import { blogs } from "@/constants/blogs";
 import Image from "next/image";
 
 const Home = () => {
@@ -38,7 +39,7 @@ const Home = () => {
         <h1 className='text-2xl font-bold w-full flex items-center justify-start'>
           Latest Posts
         </h1>
-        <Blogs />
+        <Blogs blogs={blogs} />
       </section>
     </section>
   );
