@@ -12,7 +12,13 @@ const BlogCard: React.FC<blogPostType> = ({
   return (
     <div className='flex flex-col items-center justify-center gap-4 lg:w-[396px] md:w-[396px] sm:w-[90%] xsm:w-[90%] p-4 rounded-xl border border-secondary-100 shadow-sm'>
       <div className=''>
-        <Image src={thumbnail} alt={title} width={360} height={240} />
+        <Image
+          src={thumbnail}
+          alt={title}
+          width={360}
+          height={240}
+          className='w-[360px] h-[240px] object-cover'
+        />
       </div>
       <div className='flex flex-col gap-5'>
         <div className=''>
