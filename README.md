@@ -1,8 +1,8 @@
-# Beesound - a modern ecommerce store
+# MetaBlog -  Blog App
 
 ## 🌐 Demo
 
-Here is a working live demo: https://beesound.vercel.app/
+Here is a working live demo: https://metablog.molaraiche.com/
 
 ## 📝 Description
 
