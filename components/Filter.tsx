@@ -1,5 +1,4 @@
 import { CiFilter } from "react-icons/ci";
-
 interface FilterProps {
   onFilterChange: (selectedTag: string) => void;
 }

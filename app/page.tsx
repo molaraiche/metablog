@@ -39,7 +39,7 @@ const Home = () => {
         <h1 className='text-2xl font-bold w-full flex items-center justify-start'>
           Latest Posts
         </h1>
-        <Blogs blogs={blogs} />
+        <Blogs blogs={blogs} isLoading={true} />
       </section>
     </section>
   );

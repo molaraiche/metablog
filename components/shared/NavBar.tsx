@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import Search from "../Search";
 import Mode from "../Mode";
 import Logo from "./Logo";
 import { RiMenu2Line } from "react-icons/ri";
@@ -9,9 +8,10 @@ import { useCallback, useState } from "react";
 
 const NavBar = () => {
   const [menu, setMenu] = useState(false);
+
   const menuHandler = useCallback(() => {
     setMenu((prevMenu) => !prevMenu);
-  }, [menu]);
+  }, []);
   const linkHandler: React.MouseEventHandler<HTMLAnchorElement> =
     useCallback(() => {
       setMenu(false);
@@ -37,7 +37,6 @@ const NavBar = () => {
         className={`utils
       ${menu ? "sm:translate-x-0 xsm:translate-x-[0%]" : "-translate-x-[200%]"} 
         `}>
-        <Search linkHandler={linkHandler} />
         <Mode />
       </div>
       <div className='lg:hidden md:hidden sm:flex xsm:flex'>
