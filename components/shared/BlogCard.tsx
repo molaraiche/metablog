@@ -21,7 +21,6 @@ const BlogCard: React.FC<blogPostType> = ({
           tag: tag,
           author: author,
           date: date,
-          thumbnail: thumbnail,
           profile: profile,
           mainImage: mainImage,
           context: context,

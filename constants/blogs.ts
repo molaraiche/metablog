@@ -91,7 +91,7 @@ export const blogs: blogPostType[] = [
     author: "Jack Taylor",
     tag: "Lifestyle",
     date: "October 20, 2024",
-    profile: "/assets/person.jpg",
+    profile: "/assets/person.png",
     thumbnail: "/assets/minimalism.jpg",
     mainImage: "/assets/minimalism.jpg",
     context:
@@ -127,7 +127,7 @@ export const blogs: blogPostType[] = [
     author: "Grace Turner",
     tag: "Lifestyle",
     date: "November 5, 2024",
-    profile: "/assets/person.jpg",
+    profile: "/assets/person.png",
     thumbnail: "/assets/time-management.jpg",
     mainImage: "/assets/time-management.jpg",
     context:
