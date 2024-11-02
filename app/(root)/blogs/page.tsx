@@ -55,7 +55,7 @@ const BlogPage: React.FC = () => {
         />
         <Filter onFilterChange={handleFilterChange} />
       </div>
-      <Blogs blogs={filteredBlogs} isLoading={false} />
+      <Blogs blogs={filteredBlogs} />
     </section>
   );
 };
