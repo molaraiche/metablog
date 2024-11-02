@@ -58,13 +58,13 @@ We need to install or make sure that these tools are pre-installed on your machi
 3. Install dependencies
 
    ```bash
-   yarn install
+   yarn
    ```
 
 4. Start the application
 
    ```bash
-   npm start
+   yarn run dev
    ```
 
 5. Open your web browser and navigate to <a href="http://localhost:3000" target="_blank">http://localhost:3000</a> to see the project running.
