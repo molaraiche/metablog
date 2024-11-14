@@ -8,7 +8,7 @@ const Home = () => {
       <section className='flex flex-col items-center justify-center relative lg:gap-0 md:gap-0 sm:gap-3 xsm:gap-3 py-20'>
         <div className=''>
           <Image
-            src='/assets/hero.jpg'
+            src='/assets/hero.png'
             width={1216}
             height={600}
             alt='Hero'
