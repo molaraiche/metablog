@@ -2,11 +2,11 @@
 
 # Metablog
 
-Metablog is a fullstack functioanl web application that provide fully control blog with fancy dashboard
+Metablog is a full-stack functional web application that provides a fully controlled blog with a fancy dashboard
 
 ## Purpose
 
-build this applciation to deliver a product i always want blogs to provide it with this fancy way (more details coming soon)
+build this application to deliver a product i always want blogs to provide it in this fancy way (more details coming soon)
 
 ## Main Features ( this project is still under build)
 
@@ -27,7 +27,7 @@ build this applciation to deliver a product i always want blogs to provide it wi
 # clone the project
 git clone https://github.com/molaraiche/metablog.git
 
-# go to the folder
+# Go to the folder
 cd metablog
 
 # Install dependencies
