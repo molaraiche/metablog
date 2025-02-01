@@ -38,6 +38,11 @@ const NavBar = () => {
       ${menu ? "sm:translate-x-0 xsm:translate-x-[0%]" : "-translate-x-[200%]"} 
         `}>
         <Mode />
+        <Link
+          href='/sign-up'
+          className='dark:text-white text-secondary-900 hover:text-[#4B6BFB] dark:hover:text-[#4B6BFB] font-semibold'>
+          Sign up
+        </Link>
       </div>
       <div className='lg:hidden md:hidden sm:flex xsm:flex'>
         {menu ? (

@@ -28,7 +28,10 @@ const BlogPost = () => {
       <div className='my-8'>
         <Image src={mainImage} alt={title} width={800} height={462} />
       </div>
-      <p className='text-xl text-secondary-600 font-jakarta'> {context} </p>
+      <p className='text-xl text-secondary-600 font-jakarta prose dark:prose-invert'>
+        {" "}
+        {context}{" "}
+      </p>
     </section>
   );
 };
